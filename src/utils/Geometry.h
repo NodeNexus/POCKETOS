@@ -19,3 +19,4 @@ namespace geom {
     Rect(int x, int y, int w, int h) : x(x), y(y), w(w), h(h) {}
     bool contains(const Point& p) const {
       return p.x >= x && p.x < x + w && p.y >= y && p.y < y + h;
+    }
