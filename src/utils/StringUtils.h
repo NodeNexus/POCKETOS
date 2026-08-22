@@ -12,3 +12,4 @@ namespace str_utils {
   }
   inline void toUpperCase(String& str) {
     str.toUpperCase();
+  }
