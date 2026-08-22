@@ -10,3 +10,4 @@ namespace str_utils {
     }
     return true;
   }
+  inline void toUpperCase(String& str) {
