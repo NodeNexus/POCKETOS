@@ -15,3 +15,4 @@ namespace str_utils {
   }
   inline void toLowerCase(String& str) {
     str.toLowerCase();
+  }
