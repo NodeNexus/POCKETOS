@@ -7,3 +7,4 @@ namespace str_utils {
   inline bool isBlank(const String& str) {
     for (unsigned int i = 0; i < str.length(); i++) {
       if (!isSpace(str[i])) return false;
+    }
