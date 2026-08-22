@@ -9,3 +9,4 @@ namespace str_utils {
       if (!isSpace(str[i])) return false;
     }
     return true;
+  }
