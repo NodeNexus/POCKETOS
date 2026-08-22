@@ -6,3 +6,4 @@ namespace math_utils {
     if (val > max_val) return max_val;
     return val;
   }
+  inline int abs_int(int a) {
