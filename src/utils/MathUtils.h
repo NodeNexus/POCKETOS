@@ -7,3 +7,4 @@ namespace math_utils {
     return val;
   }
   inline int abs_int(int a) {
+    return a < 0 ? -a : a;
