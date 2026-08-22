@@ -7,3 +7,4 @@ namespace geom {
     Point(int x, int y) : x(x), y(y) {}
   };
   struct Size {
+    int width;
