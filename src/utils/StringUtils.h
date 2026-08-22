@@ -14,3 +14,4 @@ namespace str_utils {
     str.toUpperCase();
   }
   inline void toLowerCase(String& str) {
+    str.toLowerCase();
