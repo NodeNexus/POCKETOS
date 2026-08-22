@@ -13,3 +13,4 @@ namespace geom {
     Size(int w, int h) : width(w), height(h) {}
   };
   struct Rect {
+    int x, y;
