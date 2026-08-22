@@ -9,3 +9,4 @@ namespace geom {
   struct Size {
     int width;
     int height;
+    Size() : width(0), height(0) {}
