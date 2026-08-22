@@ -15,3 +15,4 @@ namespace geom {
   struct Rect {
     int x, y;
     int w, h;
+    Rect() : x(0), y(0), w(0), h(0) {}
