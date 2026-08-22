@@ -8,3 +8,4 @@ namespace str_utils {
     for (unsigned int i = 0; i < str.length(); i++) {
       if (!isSpace(str[i])) return false;
     }
+    return true;
