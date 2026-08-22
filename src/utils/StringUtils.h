@@ -5,3 +5,4 @@ namespace str_utils {
     return str.length() == 0;
   }
   inline bool isBlank(const String& str) {
+    for (unsigned int i = 0; i < str.length(); i++) {
