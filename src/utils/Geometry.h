@@ -8,3 +8,4 @@ namespace geom {
   };
   struct Size {
     int width;
+    int height;
