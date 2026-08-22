@@ -8,3 +8,4 @@ namespace math_utils {
   }
   inline int abs_int(int a) {
     return a < 0 ? -a : a;
+  }
