@@ -20,6 +20,42 @@ PocketOS is not a demo sketch — it is a structured C++ firmware that behaves l
 
 ---
 
+## System Architecture
+
+```mermaid
+flowchart TD
+    subgraph Hardware ["Hardware Layer"]
+        ESP["ESP32-S3-Zero MCU"]
+        TFT["ST7735S 128x128 SPI Display"]
+        BTN["3x Push Buttons (UP / SELECT / DOWN)"]
+        SD["SPI MicroSD Module"]
+    end
+
+    subgraph Core ["PocketOS Core Services"]
+        HAL["TFT_eSPI Graphics Driver"]
+        INPUT["Debounced Button State Machine"]
+        PWR["Inactivity & Power Manager"]
+        NVS["NVS Flash Settings Storage"]
+    end
+
+    subgraph UI ["Compositor & GUI"]
+        STATUS["Live Status Bar"]
+        LAUNCHER["Paged 3x3 Animated Launcher"]
+        THEMES["Theme Manager (Dark / Light / Cyber)"]
+    end
+
+    subgraph Apps ["Application Stack"]
+        SETTINGS["System Settings App"]
+        CUSTOM["Modular Custom Apps"]
+    end
+
+    Hardware --> Core
+    Core --> UI
+    UI --> Apps
+```
+
+---
+
 ## Hardware
 
 | Component | Part |
